@@ -1,8 +1,8 @@
-name: Workflow 2
+name: Handle Issues
 on: issues
 jobs:
-  info:
+  output-info:
     runs-on: ubuntu-latest
     steps:
-      - name: Output GitHub Context 
+      - name: Output Event Details
         run: echo "${{ toJSON(github) }}" 
